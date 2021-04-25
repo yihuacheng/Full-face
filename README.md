@@ -19,9 +19,9 @@ Each project contains following files/folders.
 - `reader/`, the code for reading data. You can use the provided reader or write your own reader.
 
 ## Getting Started
-#### Writing your own *config.yaml*.
+### Writing your own *config.yaml*.
 
-Normally, to training, you should change 
+Normally, for training, you should change 
 1. `train.save.save_path`, The model is saved in the `$save_path$/checkpoint/`.
 2. `train.data.image`, This is the path of image.
 3. `train.data.label`, This is the path of label.
@@ -32,7 +32,7 @@ For test, you should change
 2. `test.data.image`, it is usually the same as `train.data.image`.
 3. `test.data.label`, it is usually the same as `train.data.label`.
  
-#### Training.
+### Training.
 
 In leaveone folder, you can run
 ```
@@ -52,7 +52,7 @@ In the traintest folder, you can run
 python train.py config/config_mpii.yaml
 ```
 
-#### Testing.
+### Testing.
 In leaveone folder, you can run
 ```
 python test.py config/config_mpii.yaml 0
@@ -67,6 +67,6 @@ In the traintest folder, you can run
 python test.py config/config_mpii.yaml
 ```
 
-#### Result
+### Result
 After training or test, you can find the result from the `save_path` in `config_mpii.yaml`. 
 
