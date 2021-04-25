@@ -25,18 +25,5 @@ test:
    data:
       image: "/home/cyh/GazeDataset20200519/FaceBased/Gaze360/Image"
       label: "/home/cyh/GazeDataset20200519/FaceBased/Gaze360/Label/val.label"
-cross:
-   savename: cross-diap-new
-   load:
-      begin_step: 15
-      end_step: 15
-      steps: 5
-      load_path: "/home/cyh/GazeBenchmark/exp/Implementation/Full-Face-gaze360"
-      model_name: weight
-   data:
-# image: "/home/cyh/GazeDataset20200519/FaceBased/MPIIFaceGaze/Image"
-# label: "/home/cyh/GazeDataset20200519/FaceBased/MPIIFaceGaze/Label"
-      image: "/home/cyh/GazeDataset20200519/FaceBased/EyeDiap/Image"
-      label: "/home/cyh/GazeDataset20200519/FaceBased/EyeDiap/ClusterLabel"
 
 reader: reader_diap
