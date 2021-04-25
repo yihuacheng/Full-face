@@ -1,0 +1,28 @@
+---
+train:
+  params:
+    batch_size: 64
+    epoch: 100
+    lr: 0.00001
+    decay: 0.1
+    decay_step: 5000
+    loss: L1Loss
+  save:
+    save_path: "/home/cyh/GazeBenchmark/exp/Implementation/Full-Face-diapnoscale"
+    model_name: weight
+    step: 20
+  data:
+    image: "/home/cyh/GazeDataset20200519/FaceBased/EyeDiap/Image"
+    label: "/home/cyh/GazeDataset20200519/FaceBased/EyeDiap/ClusterLabel"
+  pretrains: "None"
+test:
+   load:
+      begin_step: 20
+      end_step: 20
+      steps: 20
+      load_path: "/home/cyh/GazeBenchmark/exp/Implementation/Full-Face-diapnoscale"
+      model_name: weight
+   data:
+      image: "/home/cyh/GazeDataset20200519/FaceBased/EyeDiap/Image"
+      label: "/home/cyh/GazeDataset20200519/FaceBased/EyeDiap/ClusterLabel"
+reader: reader_diap

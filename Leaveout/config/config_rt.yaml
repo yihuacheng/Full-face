@@ -1,0 +1,28 @@
+---
+train:
+  params:
+    batch_size: 64
+    epoch: 40
+    lr: 0.00001
+    decay: 0.1
+    decay_step: 5000
+    loss: L1Loss
+  save:
+    save_path: "/home/cyh/GazeBenchmark/exp/Implementation/Full-Face-rt"
+    model_name: weight
+    step: 5
+  data:
+    image: "/home/cyh/GazeDataset20200519/Original/Rt-Gene"
+    label: "/home/cyh/GazeDataset20200519/FaceBased/RT-Gene/Label/train"
+  pretrains: "None"
+test:
+   load:
+      begin_step: 5
+      end_step: 40
+      steps: 5
+      load_path: "/home/cyh/GazeBenchmark/exp/Implementation/Full-Face-rt"
+      model_name: weight
+   data:
+      image: "/home/cyh/GazeDataset20200519/Original/Rt-Gene"
+      label: "/home/cyh/GazeDataset20200519/FaceBased/RT-Gene/Label-glasses/train"
+reader: reader_rt
