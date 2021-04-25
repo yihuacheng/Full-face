@@ -7,7 +7,7 @@ The performance of this version is reported in them.
 
 To know more detail about the method, please refer the origin paper.
 
-We recommend you to use the data processing code provided in <a href="http://phi-ai.org/project/Gazehub/" target="_blank">GazeHub</a>.
+We recommend you to use the data processing code provided in <a href="http://phi-ai.org/project/Gazehub/" target="_blank">*GazeHub*</a>.
 You can use the processed dataset and this code for directly running.
 
 ## Introduction
