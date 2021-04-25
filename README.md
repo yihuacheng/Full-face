@@ -2,12 +2,13 @@
 The Pytorch Implementation of "It’s written all over your face: Full-face appearance-based gaze estimation".
 
 This is the implementated version in our survey "Appearance-based Gaze Estimation With Deep Learning: A Review and Benchmark".
-Please refer our paper or visit our benchmark <a href="http://phi-ai.org/project/Gazehub/" target="_blank">website</a> for more information.
+Please refer our paper or visit our benchmark website <a href="http://phi-ai.org/project/Gazehub/" target="_blank">*GazeHub*</a> for more information.
 The performance of this version is reported in them.
 
 To know more detail about the method, please refer the origin paper.
 
 We recommend you to use the data processing code provided in <a href="http://phi-ai.org/project/Gazehub/" target="_blank">GazeHub</a>.
+You can use the processed dataset and this code for directly running.
 
 ## Introduction
 We provide two similar projects for leave-one-person-out evaluation and common training-test split.
