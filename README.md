@@ -1,17 +1,20 @@
 # Full-face
 The Pytorch Implementation of "It’s written all over your face: Full-face appearance-based gaze estimation". (updated in 2021/04/25)
 
-This is the implementated version in our survey **"Appearance-based Gaze Estimation With Deep Learning: A Review and Benchmark"**.
+This is the implemented version metioned in our survey **"Appearance-based Gaze Estimation With Deep Learning: A Review and Benchmark"**.
 Please refer our paper or visit our benchmark website <a href="http://phi-ai.org/project/Gazehub/" target="_blank">*GazeHub*</a> for more information.
-The performance of this version is reported in them.
+The performance of this version is reported in the website.
 
 To know more detail about the method, please refer the origin paper.
 
 We recommend you to use the data processing code provided in <a href="http://phi-ai.org/project/Gazehub/" target="_blank">*GazeHub*</a>.
 You can use the processed dataset and this code for directly running.
 
+## License
+The code is under the license of [CC BY-NC-SA 4.0 license](https://creativecommons.org/licenses/by-nc-sa/4.0/).
+
 ## Introduction
-We provide two similar projects for leave-one-person-out evaluation and common training-test split.
+We provide two similar projects for leave-one-person-out evaluation and evaluation of common training-test split.
 They have the same architecture but different started modes.
 
 Each project contains following files/folders.
@@ -75,6 +78,7 @@ After training or test, you can find the result from the `save_path` in `config_
 
 
 ## Citation
+Using this code, please cite:
 ```
 @inproceedings{Zhang_2017_CVPRW,
 	title={It’s written all over your face: Full-face appearance-based gaze estimation},
