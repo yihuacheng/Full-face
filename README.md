@@ -117,17 +117,17 @@ Please email any questions or comments to yihua_c@buaa.edu.cn.
 
 ## Reference
 
-4. MPIIGaze: Real-World Dataset and Deep Appearance-Based Gaze Estimation
+1. MPIIGaze: Real-World Dataset and Deep Appearance-Based Gaze Estimation
 2. EYEDIAP Database: Data Description and Gaze Tracking  Evaluation Benchmarks
 3. Learning-by-Synthesis for Appearance-based 3D Gaze Estimation
-6. Gaze360: Physically Unconstrained Gaze Estimation in the Wild
+3. Gaze360: Physically Unconstrained Gaze Estimation in the Wild
 5. ETH-XGaze: A Large Scale Dataset for Gaze Estimation under Extreme Head Pose and Gaze Variation
 6. Appearance-Based Gaze Estimation in the Wild  
 7. Appearance-Based Gaze Estimation Using Dilated-Convolutions
-5. RT-GENE: Real-Time Eye Gaze Estimation in Natural Environments
-3. It’s written all over your face: Full-face appearance-based gaze estimation
-9. A Coarse-to-fine Adaptive Network for Appearance-based Gaze Estimation
-2. Eye Tracking for Everyone
-1. Adaptive Feature Fusion Network for Gaze Tracking in Mobile Tablets
-8. On-Device Few-Shot Personalization for Real-Time Gaze Estimation
-10. A Generalized and Robust Method Towards Practical Gaze Estimation on Smart Phone
+8. RT-GENE: Real-Time Eye Gaze Estimation in Natural Environments
+9. It’s written all over your face: Full-face appearance-based gaze estimation
+10. A Coarse-to-fine Adaptive Network for Appearance-based Gaze Estimation
+11. Eye Tracking for Everyone
+12. Adaptive Feature Fusion Network for Gaze Tracking in Mobile Tablets
+13. On-Device Few-Shot Personalization for Real-Time Gaze Estimation
+14. A Generalized and Robust Method Towards Practical Gaze Estimation on Smart Phone
