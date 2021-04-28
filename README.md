@@ -10,7 +10,6 @@ You can direct run the method' code using the processed dataset.
 ## Links to gaze estimation codes.
 
 - A Coarse-to-fine Adaptive Network for Appearance-based Gaze Estimation, AAAI 2020 (Coming soon)
-- [Adaptive Feature Fusion Network for Gaze Tracking in Mobile Tablets](https://github.com/kirito12138/AFF-Net/), ICPR 2020
 - [Gaze360: Physically Unconstrained Gaze Estimation in the Wild](https://github.com/yihuacheng/Gaze360), ICCV 2019
 - [Appearance-Based Gaze Estimation Using Dilated-Convolutions](https://github.com/yihuacheng/Dilated-Net), ACCV 2019
 - [Appearance-Based Gaze Estimation via Evaluation-Guided Asymmetric Regression](https://github.com/yihuacheng/ARE-GazeEstimation), ECCV 2018
