@@ -54,11 +54,11 @@ For test, you should change
  
 ### Training
 
-In leaveout folder, you can run
+In the leaveout folder, you can run
 ```
 python train.py config/config_mpii.yaml 0
 ```
-This means the code will running with `config_mpii.yaml` and use the `0th` person as the test set.
+This means the code will run with `config_mpii.yaml` and use the `0th` person as the test set.
 
 You also can run
 ```
@@ -73,7 +73,7 @@ python train.py config/config_mpii.yaml
 ```
 
 ### Testing
-In leaveone folder, you can run
+In the leaveone folder, you can run
 ```
 python test.py config/config_mpii.yaml 0
 ```
