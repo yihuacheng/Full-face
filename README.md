@@ -4,8 +4,8 @@ The Pytorch Implementation of "It’s written all over your face: Full-face appe
 We build benchmarks for gaze estimation in our survey [**"Appearance-based Gaze Estimation With Deep Learning: A Review and Benchmark"**](https://arxiv.org/abs/2104.12668).
 This is the implemented code of "Full-face" methods in our benchmark. Please refer our survey for more details.
 
-We recommend you to use the data processing code provided in <a href="http://phi-ai.org/GazeHub/" target="_blank">*GazeHub*</a>.
-You can direct run this code using the processed dataset.
+We recommend you to use **data processing codes** provided in <a href="http://phi-ai.org/GazeHub/" target="_blank">*GazeHub*</a>.
+You can direct run the method' code using the processed dataset.
 
 ## Links to gaze estimation codes.
 
@@ -20,7 +20,10 @@ You can direct run this code using the processed dataset.
 - [Eye Tracking for Everyone](https://github.com/yihuacheng/Itracker), CVPR 2016
 - [Appearance-Based Gaze Estimation in the Wild](https://github.com/yihuacheng/Mnist), CVPR 2015
 
-
+## Performance
+The method is evaluated in three task. Please refer our survey for more details.
+![benchmarks](benchmarkA.png)
+![benchmarks](benchmarkB.png)
 ## License
 The code is under the license of [CC BY-NC-SA 4.0 license](https://creativecommons.org/licenses/by-nc-sa/4.0/).
 
@@ -111,3 +114,21 @@ If you use our code, please cite:
 ```
 ## Contact 
 Please email any questions or comments to yihua_c@buaa.edu.cn.
+
+
+## Reference
+
+4. MPIIGaze: Real-World Dataset and Deep Appearance-Based Gaze Estimation
+2. EYEDIAP Database: Data Description and Gaze Tracking  Evaluation Benchmarks
+3. Learning-by-Synthesis for Appearance-based 3D Gaze Estimation
+6. Gaze360: Physically Unconstrained Gaze Estimation in the Wild
+5. ETH-XGaze: A Large Scale Dataset for Gaze Estimation under Extreme Head Pose and Gaze Variation
+6. Appearance-Based Gaze Estimation in the Wild  
+7. Appearance-Based Gaze Estimation Using Dilated-Convolutions
+5. RT-GENE: Real-Time Eye Gaze Estimation in Natural Environments
+3. It’s written all over your face: Full-face appearance-based gaze estimation
+9. A Coarse-to-fine Adaptive Network for Appearance-based Gaze Estimation
+2. Eye Tracking for Everyone
+1. Adaptive Feature Fusion Network for Gaze Tracking in Mobile Tablets
+8. On-Device Few-Shot Personalization for Real-Time Gaze Estimation
+10. A Generalized and Robust Method Towards Practical Gaze Estimation on Smart Phone
