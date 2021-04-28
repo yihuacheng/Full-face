@@ -2,7 +2,7 @@
 The Pytorch Implementation of "It’s written all over your face: Full-face appearance-based gaze estimation". (updated in 2021/04/28)
 
 We build benchmarks for gaze estimation in our survey [**"Appearance-based Gaze Estimation With Deep Learning: A Review and Benchmark"**](https://arxiv.org/abs/2104.12668).
-This is the implemented code of "Full-face" method in our benchmark. Please refer our survey for more details.
+This is the implemented code of the "Full-face" method in our benchmark. Please refer our survey for more details.
 
 We recommend you to use **data processing codes** provided in <a href="http://phi-ai.org/GazeHub/" target="_blank">*GazeHub*</a>.
 You can direct run the method' code using the processed dataset.
@@ -23,6 +23,7 @@ You can direct run the method' code using the processed dataset.
 The method is evaluated in three tasks. Please refer our survey for more details.
 ![benchmarks](benchmarkA.png)
 ![benchmarks](benchmarkB.png)
+
 ## License
 The code is under the license of [CC BY-NC-SA 4.0 license](https://creativecommons.org/licenses/by-nc-sa/4.0/).
 
@@ -73,7 +74,7 @@ python train.py config/config_mpii.yaml
 ```
 
 ### Test
-In the leaveone folder, you can run
+In the leaveout folder, you can run
 ```
 python test.py config/config_mpii.yaml 0
 ```
