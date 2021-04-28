@@ -20,7 +20,7 @@ You can direct run the method' code using the processed dataset.
 - [Appearance-Based Gaze Estimation in the Wild](https://github.com/yihuacheng/Mnist), CVPR 2015
 
 ## Performance
-The method is evaluated in three task. Please refer our survey for more details.
+The method is evaluated in three tasks. Please refer our survey for more details.
 ![benchmarks](benchmarkA.png)
 ![benchmarks](benchmarkB.png)
 ## License
