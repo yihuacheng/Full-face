@@ -1,36 +1,47 @@
 # Full-face
-The Pytorch Implementation of "It’s written all over your face: Full-face appearance-based gaze estimation". (updated in 2021/04/25)
+The Pytorch Implementation of "It’s written all over your face: Full-face appearance-based gaze estimation". (updated in 2021/04/28)
 
-This is the implemented version metioned in our survey **"Appearance-based Gaze Estimation With Deep Learning: A Review and Benchmark"**.
-Please refer our paper or visit our benchmark website <a href="http://phi-ai.org/GazeHub/" target="_blank">*GazeHub*</a> for more information.
-The performance of this version is reported in the website.
-
-To know more detail about the method, please refer the origin paper.
+We build benchmarks for gaze estimation in our survey [**"Appearance-based Gaze Estimation With Deep Learning: A Review and Benchmark"**](https://arxiv.org/abs/2104.12668).
+This is the implemented code of "Full-face" methods in our benchmark. Please refer our survey for more details.
 
 We recommend you to use the data processing code provided in <a href="http://phi-ai.org/GazeHub/" target="_blank">*GazeHub*</a>.
-You can use the processed dataset and this code for directly running.
+You can direct run this code using the processed dataset.
+
+## Links to gaze estimation codes.
+
+- A Coarse-to-fine Adaptive Network for Appearance-based Gaze Estimation, AAAI 2020 (Coming soon)
+- [Adaptive Feature Fusion Network for Gaze Tracking in Mobile Tablets](https://github.com/kirito12138/AFF-Net/), ICPR 2020
+- [Gaze360: Physically Unconstrained Gaze Estimation in the Wild](https://github.com/yihuacheng/Gaze360), ICCV 2019
+- [Appearance-Based Gaze Estimation Using Dilated-Convolutions](https://github.com/yihuacheng/Dilated-Net), ACCV 2019
+- [Appearance-Based Gaze Estimation via Evaluation-Guided Asymmetric Regression](https://github.com/yihuacheng/ARE-GazeEstimation), ECCV 2018
+- [RT-GENE: Real-Time Eye Gaze Estimation in Natural Environments](https://github.com/yihuacheng/RT-Gene), ECCV 2018
+- [MPIIGaze: Real-World Dataset and Deep Appearance-Based Gaze Estimation](https://github.com/yihuacheng/Gaze-Net), TPAMI 2017
+- [It’s written all over your face: Full-face appearance-based gaze estimation](https://github.com/yihuacheng/Full-face), CVPRW 2017
+- [Eye Tracking for Everyone](https://github.com/yihuacheng/Itracker), CVPR 2016
+- [Appearance-Based Gaze Estimation in the Wild](https://github.com/yihuacheng/Mnist), CVPR 2015
+
 
 ## License
 The code is under the license of [CC BY-NC-SA 4.0 license](https://creativecommons.org/licenses/by-nc-sa/4.0/).
 
 
 ## Introduction
-We provide two similar projects for leave-one-person-out evaluation and evaluation of common training-test split.
-They have the same architecture but different started modes.
+We provide two projects for leave-one-person-out evaluation and the evaluation of common training-test split.
+They have the same architecture but different `train.py` and `test.py`.
 
 Each project contains following files/folders.
 - `model.py`, the model code.
 - `train.py`, the entry for training.
 - `test.py`, the entry for testing.
-- `config/`, this folder contains the config of the experiment in each dataset. To run our code, **you should write your own** `config.yaml`. 
-- `reader/`, the code for reading data. You can use the provided reader or write your own reader.
+- `config/`, this folder contains the config of experiments for each dataset. To run our code, **you should write your own** `config.yaml`. 
+- `reader/`, the data loader code. You can use the provided reader or write your own reader.
 
 ## Getting Started
 ### Writing your own *config.yaml*
 
 Normally, for training, you should change 
 1. `train.save.save_path`, The model is saved in the `$save_path$/checkpoint/`.
-2. `train.data.image`, This is the path of image.
+2. `train.data.image`, This is the path of image, please use the provided data processing code in <a href="http://phi-ai.org/GazeHub/" target="_blank">*GazeHub*</a>.
 3. `train.data.label`, This is the path of label.
 4. `reader`, This indicates the used reader. It is the filename in `reader` folder, e.g., *reader/reader_mpii.py* ==> `reader: reader_mpii`.
 
@@ -45,7 +56,7 @@ In leaveout folder, you can run
 ```
 python train.py config/config_mpii.yaml 0
 ```
-This means the code running with `config_mpii.yaml` and use the `0th` person as the test set.
+This means the code will running with `config_mpii.yaml` and use the `0th` person as the test set.
 
 You also can run
 ```
@@ -66,7 +77,7 @@ python test.py config/config_mpii.yaml 0
 ```
 or
 ```
-bash run.sh train.py config/config_mpii.yaml
+bash run.sh test.py config/config_mpii.yaml
 ```
 
 In the traintest folder, you can run
@@ -75,7 +86,7 @@ python test.py config/config_mpii.yaml
 ```
 
 ### Result
-After training or test, you can find the result from the `save_path` in `config_mpii.yaml`. 
+After training or test, you can find the result from the `$save_path$` in `config_mpii.yaml`. 
 
 
 ## Citation
@@ -91,11 +102,11 @@ If you use our code, please cite:
 	organization={IEEE}
 }
 
-@inproceedings{Cheng2021Survey,
-	title={Appearance-based Gaze Estimation With Deep Learning: A Review and Benchmark},
-	author={Yihua Cheng, Haofei Wang, Yiwei Bao, Feng Lu},
-	booktitle={arxiv}
-	year={2021}
+@article{Cheng2021Survey,
+        title={Appearance-based Gaze Estimation With Deep Learning: A Review and Benchmark},
+        author={Yihua Cheng and Haofei Wang and Yiwei Bao and Feng Lu},
+        journal={arXiv preprint arXiv:2104.12668},
+        year={2021}
 }
 ```
 ## Contact 
